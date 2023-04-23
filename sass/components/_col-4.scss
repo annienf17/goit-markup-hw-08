@@ -1,0 +1,40 @@
+/* col-4 list */
+.col-4 {
+    margin: vars.$margin-zero;
+    padding: vars.$padding-zero;
+     font-size: 14px;
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     padding-top: 94px;
+
+     &__item {
+        width: 270px; 
+     }
+/* position image */
+     &__img {
+        padding: 25px 0;
+        background-color: rgba(245, 244, 250, 1);          
+        margin-bottom: 30px;
+        border-radius: 4px;
+     }
+
+     &__title {
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10px;
+     }
+
+     &__paragraph {
+        line-height: 1.7;
+        color: vars.$color-middle-grey;
+        margin: vars.$margin-zero;
+     }
+// center icons
+     &__icon {
+        display: block;
+        margin: auto;  
+     }
+}

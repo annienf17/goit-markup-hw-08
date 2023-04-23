@@ -1,0 +1,87 @@
+/* header style */
+.header {
+        border-bottom: 1px solid vars.$color-border;
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /* logo top and footer styles */
+&__logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: vars.$letter-spacing-medium;
+    transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+    color: vars.$color-text;
+
+    &--label,
+    &:hover {
+        color: vars.$color-blue;
+    } 
+} 
+
+} 
+
+/* horizontal align ul lists */
+.header {
+    
+    .container {
+        display: flex;
+        justify-content: space-between;  
+        ul {
+            display: flex;
+            gap: 50px
+        }   
+        } 
+}
+
+/* logo and top menu */
+.container {
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 43px;  
+    }   
+}
+
+/* header links style  */
+.contact {
+    &__item {
+        display: flex;
+        align-items: center; 
+
+        &:hover {
+            --color2: vars.$color-middle-grey;
+            fill: vars.$color-blue;
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }
+
+    &__icon { 
+        margin-right: 10px; 
+        --color2: vars.$color-middle-grey;
+        
+        &:hover {
+            fill: vars.$color-blue;
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: vars.$letter-spacing-small;
+        color: vars.$color-middle-grey;
+
+        &:hover {
+            color: vars.$color-blue;
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }
+   
+    
+}
+

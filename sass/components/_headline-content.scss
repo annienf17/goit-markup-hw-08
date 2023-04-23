@@ -1,0 +1,29 @@
+/* front page headline-content */
+.headline-content {
+    background-color: vars.$color-dark-grey;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/webstudio-top-bg.jpg);
+    background-size: cover;
+    color: vars.$color-white;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 44px;
+        text-transform: uppercase;
+        line-height: 1.4;
+        margin-top: 0;
+        letter-spacing: vars.$letter-spacing-large;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        max-width: 696px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

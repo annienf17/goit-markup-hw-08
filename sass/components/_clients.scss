@@ -1,0 +1,31 @@
+/* nasi klienci section */
+.clients {
+    &__list {
+       padding: vars.$padding-zero;
+        margin: vars.$margin-zero;
+        display: flex;
+        justify-content: center;
+        gap: 30px;   
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; 
+    }
+    &__icon {
+        --color1: vars.$color-icons;
+        fill: vars.$color-icons;
+        border: 1px solid vars.$color-icons;
+        width: 170px;
+        height: 92px;
+        padding: 16px 32px;
+        border-radius: 4px;
+
+        &:hover {
+            fill: vars.$color-blue;
+            border: 1px solid vars.$color-blue;  
+        }
+    }
+    
+}

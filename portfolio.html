@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw8-Portfolio</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- normalize minimized css  -->
+    <link rel="stylesheet" href="./css/modern-normalize.min.css">
+
+    <!-- styles CSS -->
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <!-- max width of page -->
+        <div class="container">
+            <!-- left side -->
+            <div class="container__left">
+                <!-- logo -->
+                <a class="header__logo" href="./"><span class="header__logo--label">Web</span>Studio</a>
+                <!-- main navigation -->
+                <nav class="main-nav" aria-label="Main">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link" href="./">Agencja</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active"
+                                href="./portfolio.html">Portfolio</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="./">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- contact links -->
+            <ul class="container__right contact">
+                <!-- email -->
+                <li class="contact__item">
+                    <svg class="contact__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    <a class="contact__link" href="mailto:info@devstudio.com" title="Kontakt mailowy">
+                        info@devstudio.com</a>
+                </li>
+                <!-- phone -->
+                <li class="contact__item">
+                    <svg class="contact__icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    <a class="contact__link" href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111 111</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- main section content of the portfolio page -->
+    <main>
+        <!-- top button list -->
+        <ul class="bttn-group">
+            <li class="bttn-group__item"><button type="button" class="bttn bttn-group__bttn">Wszystkie</button></li>
+            <li class="bttn-group__item"><button type="button" class="bttn bttn-group__bttn">Strony</button></li>
+            <li class="bttn-group__item"><button type="button" class="bttn bttn-group__bttn">Aplikacje</button></li>
+            <li class="bttn-group__item"><button type="button" class="bttn bttn-group__bttn">Dizajn</button></li>
+            <li class="bttn-group__item"><button type="button" class="bttn bttn-group__bttn">Marketing</button></li>
+        </ul>
+        <!-- Projects gallery -->
+        <div class="projects-gallery">
+
+            <ul class="projects-gallery__row">
+                <!-- Technocrack -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Technocrack.jpg" width="370" height="294" alt="Technocrack">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Technocrack</h2>
+                    <p class="projects-gallery__paragraph">Strona internetowa</p>
+                </li>
+
+                <!-- Grafika New Orlean vs Golden Star -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Grafika-New-Orlean-vs-Golden-Star.jpg" width="370" height="294"
+                            alt="Grafika New Orlean vs Golden Star">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Grafika New Orlean vs Golden Star</h2>
+                    <p class="projects-gallery__paragraph">Dizajn</p>
+                </li>
+
+                <!-- Restauracja Seafood -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Restauracja-Seafood.jpg" width="370" height="294" alt="Restauracja Seafood">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Restauracja Seafood</h2>
+                    <p class="projects-gallery__paragraph">Aplikacja</p>
+
+                </li>
+            </ul>
+            <ul class="projects-gallery__row">
+                <!-- Projekt Prime -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Projekt-Prime.jpg" width="370" height="294" alt="Projekt Prime">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Projekt Prime</h2>
+                    <p class="projects-gallery__paragraph">Marketing</p>
+                </li>
+
+                <!-- Projekt Boxes -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Projekt-Boxes.jpg" width="370" height="294" alt="Projekt Boxes">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Projekt Boxes</h2>
+                    <p class="projects-gallery__paragraph">Aplikacja</p>
+                </li>
+
+                <!-- Inspiration has no Borders -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Inspiration-has-no-Borders.jpg" width="370" height="294"
+                            alt="Inspiration has no Borders">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Inspiration has no Borders</h2>
+                    <p class="projects-gallery__paragraph">Strona internetowa</p>
+
+                </li>
+            </ul>
+            <ul class="projects-gallery__row">
+                <!-- Magazyn Limited Edition -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Magazyn-Limited-Edition.jpg" width="370" height="294"
+                            alt="Magazyn Limited Edition">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Magazyn Limited Edition</h2>
+                    <p class="projects-gallery__paragraph">Dizajn</p>
+                </li>
+
+                <!-- Projekt LAB -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Projekt-LAB.jpg" width="370" height="294" alt="Projekt LAB">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Projekt LAB</h2>
+                    <p class="projects-gallery__paragraph">Marketing</p>
+                </li>
+
+                <!-- Growing Business -->
+                <li class="projects-gallery__item">
+                    <div class="image-overlay">
+                        <img src="images/Growing-Business.jpg" width="370" height="294" alt="Growing Business">
+                        <div class="overlay">
+                            <p class="overlay__paragraph">Technoduck is a state-of-the-art coronavirus distribution
+                                platform. Companies use this
+                                platform for digital espionage and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <h2 class="projects-gallery__title">Growing Business</h2>
+                    <p class="projects-gallery__paragraph">Aplikacja</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <!-- column 1 -->
+            <ul class="footer-contact">
+                <li class="footer-contact__item">
+                    <!-- logo footer -->
+                    <a class="footer__logo" href="./"><span class="footer__logo--label">Web</span>Studio</a>
+                </li>
+                <li class="footer-contact__item">
+                    <!-- address -->
+                    <address class="footer-contact__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+                </li>
+                <li class="footer-contact__item">
+                    <!-- email footer -->
+                    <a class="footer-contact__link" href="mailto:info@devstudio.com"
+                        title="Kontakt mailowy">info@devstudio.com</a>
+                </li>
+                <li>
+                    <!-- phone footer -->
+                    <a class="footer-contact__link" href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111
+                        111</a>
+                </li>
+            </ul>
+
+            <!-- column 2 -->
+            <ul class="footer-join-us">
+                <!-- block of icons -->
+                <h3 class="footer-join-us__title">dolacz do nas</h3>
+
+                <div class="footer-social-media">
+                    <!-- instagram -->
+                    <li class="footer-social-media__item">
+                        <svg class="footer-social-media__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </li>
+                    <!-- twitter -->
+                    <li class="footer-social-media__item">
+                        <svg class="footer-social-media__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </li>
+                    <!-- facebook -->
+                    <li class="footer-social-media__item">
+                        <svg class="footer-social-media__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </li>
+                    <!-- linkedin -->
+                    <li class="footer-social-media__item">
+                        <svg class="footer-social-media__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </li>
+                </div>
+            </ul>
+
+            <!-- column 3 newsletter -->
+            <form name="newsletter" class="newsletter" autocomplete="on" action="">
+                <h3 class="newsletter__title">zapisz sie do newslettera</h3>
+                <div class="newsletter-box">
+                    <label class="newsletter-box__label" for="email"></label>
+                    <div class="newsletter-box__wrapper">
+                        <input class="newsletter-box__input" id="email" type="email" name="email" placeholder="E-mail">
+                        <button class="bttn bttn-main bttn-main--send" type="submit">Zapisz sie <svg
+                                class="newsletter__icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg></button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </footer>
+</body>
+</html>

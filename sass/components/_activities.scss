@@ -1,0 +1,27 @@
+/* activities section */
+.activities  {
+    &__images {
+        display: flex;
+        justify-content: center; 
+        gap: 30px;
+    }  
+}
+
+/* figure in activities */
+.photo {
+    margin: vars.$margin-zero;
+    position: relative;
+
+    &__caption {
+        text-transform: uppercase;
+        height: 70px;
+        width: 100%;
+        background: rgba(47 48 58 / .8);
+        color: vars.$color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 1%;
+    } 
+}

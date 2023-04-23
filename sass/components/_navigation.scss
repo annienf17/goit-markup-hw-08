@@ -1,0 +1,62 @@
+.main-nav {
+    &__list {
+    gap: 46px;
+}
+   &__item {
+    position: relative;
+}
+   &__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: vars.$letter-spacing-small;
+
+    &:link,
+    &:visited {
+        color: vars.$color-text;
+    }
+
+    &:hover,
+    &:active,
+    &:focus  {
+        color: vars.$color-blue;
+    transition: .25s cubic-bezier(0.4, 0, 0.2, 1);  
+    }
+
+    &:after {
+    content:" ";
+    position: absolute;
+    background: vars.$color-blue;
+    width: 100%;
+    height: 4px;
+    top: 46px;
+    left: 0;
+    bottom: 0;
+    /* hide bottom line when not hover */
+    opacity: 0;
+    transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
+}
+
+/* show bottom line when active page */
+.main-nav__link--active {
+    color: vars.$color-blue; 
+
+    &::after {
+        content:" ";
+        position: absolute;
+        background: vars.$color-blue;
+        width: 100%;
+        height: 4px;
+        top: 46px;
+        left: 0;
+        bottom: 0;
+        opacity: 1;  
+    }
+}
+}
+

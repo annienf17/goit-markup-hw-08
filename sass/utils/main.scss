@@ -1,0 +1,63 @@
+@use '../utils/vars';
+@import "../components/navigation";
+@import "../components/page-header";
+@import "../components/buttons";
+@import "../components/headline-content";
+@import "../components/col-4";
+@import "../components/activities";
+@import "../components/team";
+@import "../components/clients";
+@import "../components/projects-gallery";
+@import "../components/footer";
+@import "../components/modal-window";
+@import "../components/contact-form";
+
+
+/* body of page */
+body * {
+    letter-spacing: vars.$letter-spacing-medium;
+    }
+
+body {
+    background-color: vars.$color-white;
+    color: vars.$color-text;
+    font-size: 16px;
+    font-family: vars.$font-family;
+}
+/* no underlined link */
+a {
+    text-decoration: none;   
+}
+/* no bullet lists */
+li {
+    list-style-type: none;
+}
+
+h2 {
+   margin-bottom: 50px;
+}
+/* transition for all svg images */
+path { 
+   transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+/* max width of page */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: vars.$padding-zero;
+}
+/* section h2 style and padding */
+.section {
+    padding: vars.$section-padding; 
+}
+.section {
+
+    h2 { 
+    text-align: center;
+    font-size: vars.$section-h2-font-size;
+    line-height: vars.$section-h2-line-heigh;
+    margin-top: vars.$section-h2-margin-top; 
+    }  
+}
+
+

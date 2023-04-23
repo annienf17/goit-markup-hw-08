@@ -1,0 +1,161 @@
+/* fields */
+.form-field {
+    margin-bottom: 10px;
+    position: relative;
+
+    &__name {
+        display: block;
+        margin-bottom: 4px;
+        color: vars.$color-middle-grey; 
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translate(-50% -16px); 
+        width: 18px;
+        height: 18px;
+        stroke-width: 0;
+        --color1: vars.$color-text;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        height: 40px;  
+        padding: 12px 16px;
+        border: 1px solid rgba(33 33 33 / .2);
+        border-radius: 4px;
+        /* distans between icon & text */
+        padding-left: calc(16px + 18px + 12px);
+        color: vars.$color-middle-grey;
+
+        &:focus {
+            border: 1px solid vars.$color-blue;
+            outline: none; 
+
+/* sibling element svg located after input when input is focused */
+            & + .form-field__icon {
+                --color1: vars.$color-blue;
+                fill: vars.$color-blue;
+            }	
+        } 
+    } 
+  }
+ 
+  
+  /* textarea */
+.form-field-textarea {
+    margin-bottom: 20px;
+
+        &__input {
+            width: 100%;
+            resize: none;
+            height: 120px;
+            padding: 12px 16px;
+            border: 1px solid rgba(33 33 33 / .2);
+            border-radius: 4px;
+            margin: vars.$margin-zero;
+
+            &:focus {
+                border: 1px solid vars.$color-blue;
+                outline: none;
+            }
+        }
+
+        &__name {
+            color: vars.$color-middle-grey;
+            display: block;
+            margin-bottom: 4px;
+        }
+    }
+
+/* checkbox */
+/* style for regulamin & polityka prywatnosci */
+.form-field-checkbox {
+    display: flex;
+    justify-content: center;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    position: relative;
+
+    &__label {
+        color: vars.$color-middle-grey;
+        font-size: 14px;
+        /* gap 7px + 16px width of checkbox */
+        margin-left: calc(7px + 16px);
+    }
+/* hide original checkbox */
+    &__input {
+        display: none;
+        position: absolute;
+        opacity: 1;
+        cursor: pointer;
+
+/* transition effect on input and check button */
+        & ~ .form-field-checkbox__bttn {
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
+            margin-left: calc(16px);
+        }
+		
+/* checked checkbox */
+        &:checked {
+            & ~ .form-field-checkbox__bttn {
+                background-color: vars.$color-blue;
+                border: 2px solid vars.$color-blue;
+                /* calculation distance checked */
+                margin-left: calc(16px); 
+
+                &::after {
+                    display: block;
+					transition: opacity .25s;
+                }
+					
+            }
+        }
+    }
+/* position checkbox button */
+    &__bttn {
+        height: 15px;
+        width: 16px;
+        border: 2px solid vars.$color-text;
+        border-radius: 2px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+       top: 4.5px;
+
+/* position custom mark checkbox */
+       &::after {
+        left: 4px;
+        top: -1px;
+        width: 6px;
+        height: 11px;
+        border: solid vars.$color-white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        content: "";
+        position: absolute;
+        display: none;
+       }
+    }
+
+    &__link {
+        color: vars.$color-blue;
+        text-decoration: underline;
+    }
+}
+
+	
+/* button submit modal window */
+.contact-form {
+    
+ &__bttn {
+     width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+ }
+}		
+			
