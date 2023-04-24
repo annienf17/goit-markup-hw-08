@@ -17,7 +17,6 @@
     transform: scale(1);       
 }
 
-
 /* contact form on modal window */
 .modal {
     position: fixed;
@@ -45,6 +44,11 @@
     transition-property: visibility opacity, transform;
     transition-duration: 1s;
     transform: translateX(-50%) translateY(-50%) scale(1);
+
+// modal width for mobile versions
+    @media screen and (max-width: 768px) {
+        max-width: 450px;
+    }
     
     &__title {
         font-size: 20px;

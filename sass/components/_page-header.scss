@@ -1,11 +1,16 @@
 /* header style */
 .header {
         border-bottom: 1px solid vars.$color-border;
-        min-height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        height: 80px;
+        padding-top: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
 
+        @media screen and (max-width: 767px) {
+            height: 60px;
+           
+        }
+       
         /* logo top and footer styles */
 &__logo {
     font-family: 'Raleway', sans-serif;
@@ -25,14 +30,14 @@
 } 
 
 /* horizontal align ul lists */
-.header {
-    
+.header { 
     .container {
         display: flex;
         justify-content: space-between;  
+
         ul {
             display: flex;
-            gap: 50px
+            gap: 50px; 
         }   
         } 
 }
@@ -43,14 +48,25 @@
         display: flex;
         align-items: center;
         gap: 43px;  
-    }   
+    } 
+    
 }
 
 /* header links style  */
 .contact {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+    }
     &__item {
         display: flex;
         align-items: center; 
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+        
 
         &:hover {
             --color2: vars.$color-middle-grey;

@@ -6,6 +6,16 @@
         display: flex;
         justify-content: center;
         gap: 30px;   
+        flex-wrap: wrap;
+        margin: auto;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: 768px; 
+        }
+        @media screen and (min-width: 481px) and (max-width: 767px) {
+            max-width: 480px
+        }
+      
     }
     &__item {
         display: flex;
@@ -22,6 +32,16 @@
         padding: 16px 32px;
         border-radius: 4px;
 
+        @media screen and (max-width: 767px) {
+            width: 210px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            width: 226px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 170px; 
+        }
+       
         &:hover {
             fill: vars.$color-blue;
             border: 1px solid vars.$color-blue;  

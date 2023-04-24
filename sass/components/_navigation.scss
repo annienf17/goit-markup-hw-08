@@ -1,6 +1,11 @@
 .main-nav {
+    // hide navigation on mobile
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     &__list {
     gap: 46px;
+
 }
    &__item {
     position: relative;
@@ -20,16 +25,16 @@
     &:active,
     &:focus  {
         color: vars.$color-blue;
-    transition: .25s cubic-bezier(0.4, 0, 0.2, 1);  
+        transition: .25s cubic-bezier(0.4, 0, 0.2, 1);  
     }
 
     &:after {
-    content:" ";
+    content: "";
     position: absolute;
     background: vars.$color-blue;
     width: 100%;
     height: 4px;
-    top: 46px;
+    top: 44px;
     left: 0;
     bottom: 0;
     /* hide bottom line when not hover */
@@ -47,12 +52,12 @@
     color: vars.$color-blue; 
 
     &::after {
-        content:" ";
+        content: "";
         position: absolute;
         background: vars.$color-blue;
         width: 100%;
         height: 4px;
-        top: 46px;
+        top: 44px;
         left: 0;
         bottom: 0;
         opacity: 1;  

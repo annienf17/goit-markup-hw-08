@@ -42,13 +42,18 @@ path {
 }
 /* max width of page */
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: vars.$padding-zero;
 }
+
 /* section h2 style and padding */
 .section {
     padding: vars.$section-padding; 
+
+    @media screen and (max-width: 480px) {
+        padding: vars.$section-padding-mobile;
+    }
 }
 .section {
 
@@ -57,6 +62,11 @@ path {
     font-size: vars.$section-h2-font-size;
     line-height: vars.$section-h2-line-heigh;
     margin-top: vars.$section-h2-margin-top; 
+
+    // h2 in section tags for mobile versions
+    @media screen and (max-width: 768px) {
+        font-size: vars.$section-h2-font-size-mobile;
+    }
     }  
 }
 

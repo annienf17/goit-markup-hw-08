@@ -1,5 +1,10 @@
 /* activities section */
 .activities  {
+    // hide for mobile versions
+    @media screen and (max-width: 1199px) {
+        display: none;
+       }
+       
     &__images {
         display: flex;
         justify-content: center; 

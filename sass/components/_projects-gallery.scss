@@ -1,14 +1,30 @@
 /* projects gallery */
 .projects-gallery {
-    
+    @media screen and (max-width: 480px) {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       flex-direction: column;
+    } 
     &__row {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+
     &:nth-child(3) {
         margin-bottom: 94px; 
+        
+        @media screen and (max-width: 480px) {
+            margin-bottom: 60px; 
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        margin: vars.$margin-zero;
+        padding: vars.$padding-zero;    
     }
 }
 &__title {
@@ -29,6 +45,7 @@
 &__item {
     border: 1px solid vars.$color-border;
     
+    
     &:hover {
         box-shadow: 1px 4px 6px 0px rgba(0 0 0 / .16),
         0px 4px 4px 0px rgba(0 0 0 / .06),
@@ -43,7 +60,8 @@
 /* overlay */
 .image-overlay {
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
+  
 }
 .overlay {
     position: absolute;

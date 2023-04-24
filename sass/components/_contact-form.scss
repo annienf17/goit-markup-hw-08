@@ -76,6 +76,7 @@
 .form-field-checkbox {
     display: flex;
     justify-content: center;
+    align-items: center;
     line-height: 1.7;
     margin-bottom: 30px;
     position: relative;
@@ -84,7 +85,13 @@
         color: vars.$color-middle-grey;
         font-size: 14px;
         /* gap 7px + 16px width of checkbox */
-        margin-left: calc(7px + 16px);
+        margin-left: calc(16px + 8px);
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            margin-left: 8px
+        }
+
     }
 /* hide original checkbox */
     &__input {
@@ -96,7 +103,11 @@
 /* transition effect on input and check button */
         & ~ .form-field-checkbox__bttn {
             transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
-            margin-left: calc(16px);
+         
+
+            @media screen and (max-width: 768px) {
+                margin-left: 0;
+            }
         }
 		
 /* checked checkbox */
@@ -105,7 +116,11 @@
                 background-color: vars.$color-blue;
                 border: 2px solid vars.$color-blue;
                 /* calculation distance checked */
-                margin-left: calc(16px); 
+                margin-left: 16px; 
+
+                @media screen and (max-width: 768px) {
+                    margin-left: 0;
+                }
 
                 &::after {
                     display: block;
@@ -125,6 +140,11 @@
         position: absolute;
         left: 0;
        top: 4.5px;
+
+       @media screen and (max-width: 768px) {
+        top: 3px
+
+       }
 
 /* position custom mark checkbox */
        &::after {

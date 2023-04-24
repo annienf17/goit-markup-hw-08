@@ -17,11 +17,15 @@
      
      /* block models */
      $section-padding: 94px 0;
+     // mobile version
+     $section-padding-mobile: 60px 15px;
 
      /* section fonts  */
      $section-h2-font-size: 36px;
      $section-h2-line-heigh: 1.2;
      $section-h2-margin-top: 0;
+     // mobile version
+     $section-h2-font-size-mobile: 28px;
 
      /* positioning margin/padding */
      $margin-zero: 0;

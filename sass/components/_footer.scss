@@ -23,8 +23,18 @@
 
     &__container {
             display: flex;
-            justify-content: center;
-            gap: 70px;     
+            justify-content: space-around;
+            gap: 70px;   
+            flex-wrap: wrap;
+            margin: auto;   
+    }
+    .container {
+        @media screen and (max-width: 768px) { 
+            max-width: 480px;
+        }
+        @media screen and (min-width: 769px)and (max-width: 1199px){ 
+            max-width: 768px;
+        }  
     }
 }
 
@@ -32,6 +42,11 @@
 .footer-contact {
     margin: vars.$margin-zero;
     padding: vars.$padding-zero;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
     &__item {
         font-size: 14px;
         line-height: 1.7;
@@ -53,6 +68,10 @@
 .footer-join-us {
     margin: vars.$margin-zero;
     padding: vars.$padding-zero;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
     
 /* h3 footer style */
     &__title {
@@ -90,6 +109,9 @@
 }
 // column 3rd
 .newsletter {
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 /* h3 footer style */
     &__title {
         font-size: 14px;
@@ -101,9 +123,18 @@
     }
     /* newsletter input plus button */
     .newsletter-box {
+
         &__wrapper {
             display: flex;
+
+            @media screen and (max-width: 1199px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 480px;
+            }
         }
+
+        
     /* email input style */
         &__input {
             width: 358px;
@@ -114,6 +145,12 @@
             border-radius: 4px;
             color: rgba(255 255 255 / .6);
             margin-right: 12px;
+
+            @media screen and (max-width: 1199px) {
+                width: 100%;
+                margin: auto;
+                margin-bottom: 20px;
+            }
         }
     }
 
