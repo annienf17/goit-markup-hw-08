@@ -102,11 +102,14 @@
 
 /* transition effect on input and check button */
         & ~ .form-field-checkbox__bttn {
-            transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
-         
+            transition: .25s cubic-bezier(0.4, 0, 0.2, 1);     
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 margin-left: 0;
+            }
+
+            @media screen and (min-width: 768px) {
+                margin-left: 16px;
             }
         }
 		
@@ -118,7 +121,7 @@
                 /* calculation distance checked */
                 margin-left: 16px; 
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     margin-left: 0;
                 }
 
