@@ -1,16 +1,18 @@
 @use '../utils/vars';
+@import "../components/activities";
+@import "../components/buttons";
+@import "../components/clients";
+@import "../components/col-4";
+@import "../components/contact-form";
+@import "../components/team";
+@import "../components/footer";
+@import "../components/headline-content";
+@import "../components/modal-window";
+@import "../components/mobile-menu";
 @import "../components/navigation";
 @import "../components/page-header";
-@import "../components/buttons";
-@import "../components/headline-content";
-@import "../components/col-4";
-@import "../components/activities";
-@import "../components/team";
-@import "../components/clients";
 @import "../components/projects-gallery";
-@import "../components/footer";
-@import "../components/modal-window";
-@import "../components/contact-form";
+
 
 
 /* body of page */

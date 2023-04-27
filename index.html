@@ -33,9 +33,9 @@
         <!-- main navigation -->
         <nav class="main-nav" aria-label="Main">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="./">Agencja</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Portfolio</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Kontakt</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="./">Agencja</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  " href="./portfolio.html">Portfolio</a></li>
+            <li class="main-nav__item"><a class="main-nav__link " href="./">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -57,6 +57,14 @@
           <a class="contact__link" href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111 111</a>
         </li>
       </ul>
+      <!-- mobile menu button -->
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
     </div>
 
   </header>
@@ -508,5 +516,43 @@
   </footer>
   <!-- modal window script -->
   <script src="./js/modal.js"></script>
+
+  <!-- mobile menu  -->
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <!-- mobile menu -->
+    <ul class="mobile-menu">
+      <li><a href="./" class="mobile-menu__link">Agencja</a></li>
+      <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+      <li><a href="./" class="mobile-menu__link mobile-menu__link--last-link">Kontakt</a></li>
+      <!-- contacts -->
+      <li><a href="tel:+48111111111" class="mobile-menu__link mobile-menu__link--phone">+48 111 111 111</a></li>
+      <li><a href="mailto:info@devstudio.com"
+          class="mobile-menu__link mobile-menu__link--mail mobile-menu__link--last-mail">info@devstudio.com</a>
+      </li>
+    </ul>
+    <!-- social media -->
+    <ul class="mobile-menu-social-media">
+      <li class="mobile-menu-social-media__item"><a href="" class="mobile-menu-social-media__link">Instagram</a></li>
+      <li class="mobile-menu-social-media__item"><a href="" class="mobile-menu-social-media__link">Twitter</a></li>
+      <li class="mobile-menu-social-media__item"><a href="" class="mobile-menu-social-media__link">Facebook</a></li>
+      <li class="mobile-menu-social-media__item"><a href="" class="mobile-menu-social-media__link">Linkedin</a></li>
+    </ul>
+
+  </div>
+
+  <!-- script for mobile menu -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
