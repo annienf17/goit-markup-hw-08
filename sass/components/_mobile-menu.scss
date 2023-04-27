@@ -31,11 +31,7 @@
   height: 100vh;
   background-color: vars.$color-white;
   z-index: 9;
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
+  padding-left: 40px;
   transform: translateX(100%);
   transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
 
@@ -124,8 +120,16 @@
 }
 
 .mobile-menu-wrapper {
-  height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+
+    &__1 {
+      position: absolute;
+      top: 48px;;
+    }
+
+    &__2 {
+      position: absolute;
+      bottom: 48px;
+    }
   }
