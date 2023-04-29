@@ -30,7 +30,7 @@
   width: 100vw;
   height: 100vh;
   background-color: vars.$color-white;
-  z-index: 9;
+  z-index: 1;
   padding-left: 40px;
   transform: translateX(100%);
   transition: .25s cubic-bezier(0.4, 0, 0.2, 1); 
@@ -40,6 +40,7 @@
     top: calc(21px - 8px);
     right: calc(25px - 12px);
     color: vars.$color-text;
+    z-index: 1;
 
     // hover & focus 
 &:hover,
