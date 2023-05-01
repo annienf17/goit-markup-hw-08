@@ -31,9 +31,11 @@
     .container {
         @media screen and (max-width: 768px) { 
             max-width: 480px;
+            gap: 60px; 
         }
         @media screen and (min-width: 769px)and (max-width: 1199px){ 
             max-width: 768px;
+            gap: 60px; 
         }  
     }
 }
